@@ -19,24 +19,45 @@
   </head>
   <body>
     <header>
-      <span class="logotipo">CVS</span>
+      <a href="https://www.instagram.com/carlosvesa/" class="logotipo" target="_blank" >CVS <span> by @CarlosVeSa</span> </a>
     </header>
-    
+
     <main>
-      <form action="">
+      <div class="container_input">
+        <button class="closed" onclick="borrar()" >X</button>
         <textarea
-          id="'myTextArea"
-          oninput="autoGrow(this)"
+          id="text"
+          autofocus
           placeholder="Ingrese el texto aquí"
+          rows="18"
+          cols="20"
         ></textarea>
         <div class="container_buttons">
-          <button>Encriptar</button>
+          <p class="aviso">
+            <span class="circulo">
+              <span class="signo">!</span>
+            </span>
+            Solo letras minúsculas y sin acentos
+          </p>
+          <br />
+          <button id="button_encriptardor" onclick="encriptar()">
+            Encriptar
+          </button>
           <button>Desencriptar</button>
         </div>
-      </form>
-      <div class="container_output"  >
-        <p>Ningún mensaje fue encontrado</p>
-        <p>Ingrese el texto que desees encriptar o desencriptar</p>
+      </div>
+      <div class="container_output_fail">
+        <img src="./imagenes/encri2.jpg" alt="maquina encriptadora" />
+        <div class="container_text">
+          <p>Ningún mensaje fue encontrado</p>
+          <p>Ingrese el texto que desees encriptar o desencriptar</p>
+        </div>
+      </div>
+      <div class="container_output_success">
+        <p id="parrafoSuccess"></p>
+        <br>
+        <br>
+        <button id="button_copiar" >Copiar</button>
       </div>
     </main>
     <script src="./app.js"></script>
