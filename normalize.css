@@ -27,7 +27,9 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-
+p{
+  margin: 0;
+}
 main {
   display: block;
 }
