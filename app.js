@@ -31,3 +31,7 @@ function borrar() {
    containerSuccess.style.display = 'inline-block'
    parrafo.innerHTML = textoArea.value.replace(/\n/g, "<br>");
  }
+
+ function desencriptar(){
+  
+ }
