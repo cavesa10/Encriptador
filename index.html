@@ -19,12 +19,17 @@
   </head>
   <body>
     <header>
-      <a href="https://www.instagram.com/carlosvesa/" class="logotipo" target="_blank" >CVS <span> by @CarlosVeSa</span> </a>
+      <a
+        href="https://www.instagram.com/carlosvesa/"
+        class="logotipo"
+        target="_blank"
+        >CVS <span> by @CarlosVeSa</span>
+      </a>
     </header>
 
     <main>
       <div class="container_input">
-        <button class="closed" onclick="borrar()" >X</button>
+        <button class="closed" onclick="borrar()">X</button>
         <textarea
           id="text"
           autofocus
@@ -43,7 +48,7 @@
           <button id="button_encriptardor" onclick="encriptar()">
             Encriptar
           </button>
-          <button>Desencriptar</button>
+          <button onclick="desencriptar()">Desencriptar</button>
         </div>
       </div>
       <div class="container_output_fail">
@@ -55,9 +60,9 @@
       </div>
       <div class="container_output_success">
         <p id="parrafoSuccess"></p>
-        <br>
-        <br>
-        <button id="button_copiar" >Copiar</button>
+        <br />
+        <br />
+        <button id="button_copiar">Copiar</button>
       </div>
     </main>
     <script src="./app.js"></script>
