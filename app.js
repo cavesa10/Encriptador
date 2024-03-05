@@ -17,6 +17,10 @@ function borrar() {
 }
 
 function encriptar() {
+  if (textoArea.value === "") {
+    alert('Ningún mensaje fue encontrado, ingrese el texto que desees encriptar o desencriptar')
+    return
+  }
   containerFail.style.display = "none";
   if (window.innerWidth > 768) {
     containerSuccess.style.display = "inline-block";
@@ -47,6 +51,10 @@ function encriptar() {
 }
 
 function desencriptar() {
+  if (textoArea.value === "") {
+    alert('Ningún mensaje fue encontrado, ingrese el texto que desees encriptar o desencriptar')
+    return
+  }
   containerFail.style.display = "none";
   if (window.innerWidth > 768) {
     containerSuccess.style.display = "inline-block";
