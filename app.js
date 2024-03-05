@@ -65,42 +65,42 @@ function desencriptar() {
         cadenaDesencriptar[i + 3] +
         cadenaDesencriptar[i + 4];
       if (nter === "nter") {
-        resultado += char;
         i += 4;
       }
+      resultado += char;
     } else if (char === "i") {
       let mes =
         cadenaDesencriptar[i + 1] +
         cadenaDesencriptar[i + 2] +
         cadenaDesencriptar[i + 3];
       if (mes === "mes") {
-        resultado += char;
         i += 3;
       }
+      resultado += char;
     } else if (char === "a") {
       let ai = cadenaDesencriptar[i + 1];
       if (ai === "i") {
-        resultado += char;
         i++;
       }
+      resultado += char;
     } else if (char === "o") {
       let ber =
         cadenaDesencriptar[i + 1] +
         cadenaDesencriptar[i + 2] +
         cadenaDesencriptar[i + 3];
       if (ber === "ber") {
-        resultado += char;
         i += 3;
       }
+      resultado += char;
     } else if (char === "u") {
       let fat =
         cadenaDesencriptar[i + 1] +
         cadenaDesencriptar[i + 2] +
         cadenaDesencriptar[i + 3];
       if (fat === "fat") {
-        resultado += char;
         i += 3;
       }
+      resultado += char;
     } else {
       resultado += char;
     }
