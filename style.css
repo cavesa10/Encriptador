@@ -137,6 +137,73 @@ img{
   margin-top: 5px;
 }
 
+@media (max-width: 768px) {
+  .logotipo {
+    color: #8fe7e8;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .logotipo span {
+    font-size: 0.9rem;
+  }
+  main {
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    width: 100%;
+  }
+
+  .container_input {
+    display: block;
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #8fe7e8;
+    margin: 2rem auto;
+    position: relative;
+  }
+
+  textarea {
+    background: #4a494e;
+    border: none;
+    resize: none;
+    color: aliceblue;
+    outline: none;
+  }
+  .container_output_fail {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    border: 1px solid #8fe7e8;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+
+  img {
+    display: none;
+  }
+
+  .container_output_success {
+    box-sizing: border-box;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid #8fe7e8;
+  }
+  #parrafoSuccess {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    word-wrap: break-word;
+  }
+}
+
 
 
 

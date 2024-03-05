@@ -18,7 +18,11 @@ function borrar() {
 
 function encriptar() {
   containerFail.style.display = "none";
-  containerSuccess.style.display = "inline-block";
+  if (window.innerWidth > 768) {
+    containerSuccess.style.display = "inline-block";
+  } else {
+    containerSuccess.style.display = " block";
+  }
 
   let cadenaEncriptar = textoArea.value;
 
@@ -44,7 +48,11 @@ function encriptar() {
 
 function desencriptar() {
   containerFail.style.display = "none";
-  containerSuccess.style.display = "inline-block";
+  if (window.innerWidth > 768) {
+    containerSuccess.style.display = "inline-block";
+  } else {
+    containerSuccess.style.display = "block";
+  }
   let cadenaDesencriptar = textoArea.value;
 
   let resultado = "";
@@ -56,7 +64,6 @@ function desencriptar() {
         cadenaDesencriptar[i + 2] +
         cadenaDesencriptar[i + 3] +
         cadenaDesencriptar[i + 4];
-      console.log(nter);
       if (nter === "nter") {
         resultado += char;
         i += 4;
@@ -98,7 +105,6 @@ function desencriptar() {
       resultado += char;
     }
   }
-  console.log(resultado);
   parrafo.innerHTML = resultado.replace(/\n/g, "<br>");
 
 }
