@@ -137,7 +137,7 @@ img{
   margin-top: 5px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
   .logotipo {
     color: #8fe7e8;
     font-size: 1.5rem;
